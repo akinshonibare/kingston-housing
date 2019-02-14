@@ -1,0 +1,143 @@
+.template-img {
+  object-fit: cover;
+  width: 285px;
+  height: 150px;
+}
+
+.address {
+  min-height: 50px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 1rem;
+  color: #d3d3d3;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards-item {
+  display: flex;
+  padding: 1rem;
+
+  @media only screen and (min-width: 40rem) {
+    width: 50%;
+  }
+
+  @media only screen and (min-width: 56rem) {
+    width: 33.3333%;
+    // width: 20%;
+
+  }
+}
+
+.card-item {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 100% !important;
+
+  &:hover {
+    .card-image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+
+}
+
+.card-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
+
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+
+.card-title {
+  color: #003366;
+  background-color: aliceblue;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-height: 50px;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.price {
+  text-align: right;
+  position: absolute;
+  bottom: 5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  span {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-right: 5%
+  }
+}

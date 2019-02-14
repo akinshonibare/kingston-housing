@@ -1,0 +1,23 @@
+$primary-color: #D3D3D3;
+@import 'loaders.css/src/animations/pacman.scss';
+
+.homepage-wrapper {
+  .homepage {
+    padding: 0 5%;
+  }
+}
+
+.loader-wrapper {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+}

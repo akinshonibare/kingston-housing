@@ -1,0 +1,23 @@
+.app-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 2%;
+
+  background: linear-gradient(#80d0c7, #13547a);
+  // background: linear-gradient(#e4efe9, #93a5cf);
+
+
+  .app {
+    padding: 0 5%;
+  }
+
+
+}
+
+.center {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none !important;
+}

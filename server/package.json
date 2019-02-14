@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.bundle.js",
+    "start:dev": "set NODE_ENV=development && nodemon ./bin/www.js",
+    "build": "set NODE_ENV=production && webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react-app": "^7.0.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^6.2.0",
+    "ejs": "~2.5.7",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "http-proxy": "^1.17.0",
+    "mongoose": "^5.4.9",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
