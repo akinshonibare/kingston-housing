@@ -15,6 +15,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 					<Route path="/map" component={MapPage} />
+					<Route component={HomePage} />
 				</Switch>
 			</div>
 		);
